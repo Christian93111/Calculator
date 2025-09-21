@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: hsla(173, 77%, 83%, 1);
+    background-image: radial-gradient(circle at 7% 81%, hsla(104.5588235294118, 91%, 91%, 1) 16%, transparent 53%), radial-gradient(circle at 11% 29%, hsla(213, 97%, 75%, 1) 8%, transparent 74%), radial-gradient(circle at 21% 14%, hsla(149, 93%, 64%, 1) 14.288924492243542%, transparent 68%), radial-gradient(circle at 90% 50%, hsla(118, 94%, 89%, 1) 2%, transparent 85%), radial-gradient(circle at 5% 1%, hsla(250, 76%, 61%, 1) 7%, transparent 84%);
+    background-blend-mode: normal, normal, normal, normal, normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background: black;
+    padding: 30px;
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+#display {
+    color: white;
+    grid-column: span 4;
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: #555;
+}
+
+button {
+    border: none;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:nth-child(2), button:nth-child(3), button:nth-child(4) {
+    background-color: rgb(204, 204, 204);
+    color: black;
+}
+
+button:nth-child(5), button:nth-child(9), button:nth-child(13) {
+    background-color: orange;
+    color: white;
+}
+
+button:nth-last-child(1), button:nth-last-child(4) {
+    background-color: orange;
+    color: white;
+}
+
+button:nth-last-child(3) {
+    grid-column: span 2;
+}
